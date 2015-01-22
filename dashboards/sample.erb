@@ -1,0 +1,39 @@
+<% content_for :title do %>My super sweet dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="数美（かぞみ）ちゃん〜調査業務システム情報分析システム〜" data-moreinfo="本店調査部からのお知らせ:今月は完了数の向上に努めましょう！"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="synergy" data-view="Clock" data-title="Synergy" data-min="0" data-max="100"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="klimato" data-view="Klimato"></div>
+    </li>
+
+
+    
+    
+    <% h = {:調査　敏晴 => 1, :調査　厚雄 => 7} %>
+    
+    
+    
+<%  h.each do |key,value| %>
+
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="mychart<%= value %>"
+       data-view="GoogleColumn"
+       data-is_stacked="faulse"
+       data-legend_position="right"
+       data-colors="blue,red,green,purple,black"
+       data-title="行動実績（調査員名：<%= key %> ）">
+      </div>
+    </li>
+
+<%  end %>
+
+  </ul>
+
+</div>
