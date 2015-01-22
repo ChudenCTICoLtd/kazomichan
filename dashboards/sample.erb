@@ -1,15 +1,15 @@
 <% content_for :title do %>My super sweet dashboard<% end %>
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="数美（かぞみ）ちゃん〜WebDashbord情報分析システム〜" data-moreinfo="本店調査部からのお知らせ:今月は完了数の向上に努めましょう！"></div>
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="4">
+      <div data-id="welcome" data-view="Text" data-title="かぞみちゃん" data-text="ダッシュボード" data-moreinfo="本社からのお知らせ:安全に気をつけよう！"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
       <div data-id="synergy" data-view="Clock" data-title="Synergy" data-min="0" data-max="100"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
       <div data-id="klimato" data-view="Klimato"></div>
     </li>
 
@@ -22,7 +22,7 @@
     
 <%  h.each do |key,value| %>
 
-    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+    <li data-row="5" data-col="1" data-sizex="5" data-sizey="5">
       <div data-id="mychart<%= value %>"
        data-view="GoogleColumn"
        data-is_stacked="faulse"
