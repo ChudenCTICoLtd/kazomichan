@@ -47,8 +47,8 @@ send_event('bookmarks_frequency', { value: data })
 
 #a = 'otameshi2.txt'
 
-chosain1 = "http://kazomichan.ddns.net/201501-1"
-chosain7 = "http://kazomichan.ddns.net/201501-7"
+chosain1 = "http://kazomichan.noip.me/201502-1"
+chosain7 = "http://kazomichan.noip.me/201502-7"
 
 uri2 = URI.parse(chosain1)
 json2 = Net::HTTP.get(uri2)
