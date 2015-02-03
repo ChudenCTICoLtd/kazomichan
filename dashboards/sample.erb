@@ -1,34 +1,34 @@
 <% content_for :title do %>My super sweet dashboard<% end %>
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="4" data-sizey="4">
-      <div data-id="welcome" data-view="Text" data-title="かぞみちゃん" data-text="ダッシュボード" data-moreinfo="本社からのお知らせ:安全に気をつけよう！"></div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="かぞみちゃん" data-text="" data-moreinfo="本社からのお知らせ:安全に気をつけよう！"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="synergy" data-view="Clock" data-title="Synergy" data-min="0" data-max="100"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="klimato" data-view="Klimato"></div>
     </li>
 
 
     
     
-    <% h = {:調査　敏晴 => 1, :調査　厚雄 => 7} %>
+    <% h = {:大橋　正晴 => 1, :高橋　厚雄 => 7} %>
     
     
     
 <%  h.each do |key,value| %>
 
-    <li data-row="5" data-col="1" data-sizex="5" data-sizey="5">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="mychart<%= value %>"
        data-view="GoogleColumn"
-       data-is_stacked="faulse"
+       data-is_stacked="true"
        data-legend_position="right"
-       data-colors="blue,red,green,purple,black"
-       data-title="行動実績（調査員名：<%= key %> ）">
+       data-colors="88cb7f ,eb6ea5,edb842,0095d9"
+       data-title="行動実績（担当者名：<%= key %> ）">
       </div>
     </li>
 
